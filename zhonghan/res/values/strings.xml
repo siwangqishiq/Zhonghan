@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">微税</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_main">微税</string>
+	 <string name="pro_exit_cofirm">再按一次返回退出</string>
+	 <string name="years">C by2013</string>
+	 <string name="news_icon">每日播报</string>
+	<string name="magizine_icon">电子杂志</string>
+	<string name="colleage_icon">中翰税务学院</string>
+	<string name="about_icon">关于我们</string>
+	<string name="tab_home">首页</string>
+	<string name="tab_news">每日播报</string>
+	<string name="tab_magzine">电子杂志</string>
+	<string name="tab_colleage">税务学院</string>
+	<string name="tab_about">关于我们</string>
+	<string name="read_online">在线阅读</string>
+	<string name="net_error">网络请求发生错误</string>
+</resources>

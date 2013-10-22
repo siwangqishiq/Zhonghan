@@ -1,0 +1,184 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp" >
+
+    <ImageView
+        android:id="@+id/j_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/welcome" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:drawablePadding="5dp"
+        android:drawableTop="@drawable/main_bottom_icon"
+        android:text="@string/years"
+        android:textColor="#900000" />
+
+    <!-- 需要自定义的控件 -->
+
+    <com.airad.zhonghan.ui.RefreshableView
+        android:id="@+id/mypull"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/j_top"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="340dp"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <TableLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/main_cell_bg"
+                    android:paddingTop="30dp"
+                    android:stretchColumns="0,1" >
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center" >
+
+                            <TextView
+                                android:id="@+id/news_icon"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:drawablePadding="3dp"
+                                android:drawableTop="@drawable/news_icon"
+                                android:gravity="center"
+                                android:text="@string/news_icon"
+                                android:textColor="#2967A2"
+                                android:textSize="16dp" />
+
+                            <TextView
+                                android:id="@+id/news_num"
+                                android:visibility="gone"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginRight="@dimen/home_count_bg_padding1"
+                                android:background="@drawable/home_num_bg"
+                                android:gravity="center"
+                                android:textColor="#ffffff" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center" >
+
+                            <TextView
+                                android:id="@+id/magzine_icon"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:drawablePadding="3dp"
+                                android:drawableTop="@drawable/magizine_icon"
+                                android:gravity="center"
+                                android:text="@string/magizine_icon"
+                                android:textColor="#2967A2"
+                                android:textSize="16dp" />
+
+                            <TextView
+                                android:id="@+id/magzine_num"
+                                android:visibility="gone"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginRight="@dimen/home_count_bg_padding2"
+                                android:background="@drawable/home_num_bg"
+                                android:gravity="center"
+                                android:textColor="#ffffff" />
+                        </RelativeLayout>
+                    </TableRow>
+
+                    <TableRow>
+
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="30dp"
+                            android:gravity="center" >
+
+                            <TextView
+                                android:id="@+id/colleage_icon"
+                                android:gravity="center"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:drawablePadding="3dp"
+                                android:drawableTop="@drawable/colleage_icon"
+                                android:text="@string/colleage_icon"
+                                android:textColor="#2967A2"
+                                android:textSize="16dp" />
+                            <TextView
+                                android:id="@+id/colleage_num"
+                                android:visibility="gone"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginRight="@dimen/home_count_bg_padding1"
+                                android:background="@drawable/home_num_bg"
+                                android:gravity="center"
+                                android:textColor="#ffffff" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="30dp"
+                            android:gravity="center" >
+
+                            <TextView
+                                android:id="@+id/about_icon"
+                                android:gravity="center"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:drawablePadding="3dp"
+                                android:drawableTop="@drawable/about_icon"
+                                android:text="@string/about_icon"
+                                android:textColor="#2967A2"
+                                android:textSize="16dp" />
+                        </RelativeLayout>
+                    </TableRow>
+                </TableLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/main_top" />
+            </RelativeLayout>
+        </LinearLayout>
+    </com.airad.zhonghan.ui.RefreshableView>
+
+</RelativeLayout>

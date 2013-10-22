@@ -1,0 +1,23 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+   android:paddingTop="5dp"
+    android:paddingBottom="3dp"
+    android:background="@drawable/indicator_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+	
+    <ImageView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/indicator_colleage"
+        />
+	<TextView 
+	    android:textSize="11dp"
+	    android:text="@string/tab_colleage"
+	    android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/indicator_text"
+	    />
+</LinearLayout>
